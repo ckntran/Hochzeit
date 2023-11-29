@@ -73,4 +73,4 @@ def the_wedding_day():
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=False)
