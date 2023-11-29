@@ -147,10 +147,7 @@ active {
 
 #gallery .container-fluid {
   object-fit: contain;
-}
-
-#gallery .row {
-  margin-bottom: 3%;
+  margin: 3% 3% 3% 3%;
 }
 
 /* RSVP Section */
@@ -174,6 +171,10 @@ active {
 #hotels {
   font-family: 'Libre Baskerville', serif;
   padding: 3% 3%;
+}
+
+#hotels .accCard {
+  padding: 3% 3% 3% 3%;
 }
 
 /* Directions Section */
