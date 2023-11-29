@@ -1,0 +1,67 @@
+{% include "header.html" %}
+
+{% if submission_successful %}
+  <section class="white-section">
+      <h1 style="color:green"><strong>Thank you for your submission!</strong></h1>
+  </section>
+{% endif %}
+
+      <!-- Main -->
+  <section class="colored-section" id="main">
+    <div class="container-fluid">
+      <img src="{{ url_for('static', filename='images/main_pic_horizontal.jpg') }}" class="img-fluid mainImage" alt="Main Picture">
+      <h2 class="mainText">July 20, 2024, Berlin</h2>
+      <a class="btn btn-lg btn-block btn-dark mainButton" href="{{ url_for('rsvp') }}" role="button">- RSVP -</a>
+    </div>
+  </section>
+
+
+  <!-- Info -->
+
+  <section class="white-section" id="info">
+    <div class="container-fluid">
+      <div class="infoDiv">
+        <h2>3:00pm - Open End</h2>
+      </div>
+      <p><strong>Villa Schützenhof</strong></p>
+      <p>Niederneuendorferallee 12</p>
+      <p>13587 Berlin</p>
+      <a href="https://maps.app.goo.gl/9A8Y8fagSvh8zNoX6" target="_blank">View Map</a>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+
+  <section class="white-section" id="gallery">
+    <div class="row justify-content-center">
+      <div class="col-lg-2 col-md-4 col-sm-6">
+        <img class="container-fluid" src="{{ url_for('static', filename='images/Wed_1.jpg') }}" alt="Gallery Picture 1">
+      </div>
+      <div class="col-lg-2 col-md-4 col-sm-6">
+        <img class="container-fluid" src="{{ url_for('static', filename='images/Wed_2.jpg') }}" alt="Gallery Picture 2">
+      </div>
+      <div class="col-lg-2 col-md-4 col-sm-6">
+        <img class="container-fluid" src="{{ url_for('static', filename='images/Wed_3.jpg') }}" alt="Gallery Picture 3">
+      </div>
+      <div class="col-lg-2 col-md-4 col-sm-6">
+        <img class="container-fluid" src="{{ url_for('static', filename='images/Wed_4.jpg') }}" alt="Gallery Picture 4">
+      </div>
+      <div class="col-lg-2 col-md-4 col-sm-6">
+        <img class="container-fluid" src="{{ url_for('static', filename='images/Wed_5.jpg') }}" alt="Gallery Picture 5">
+      </div>
+    </div>
+  </section>
+
+
+  <!-- RSVP -->
+
+  <section class="colored-section" id="rsvp">
+    <div class="container-fluid">
+      <div class="infoDiv">
+        <h4>We hope you can celebrate with us!</h4>
+        <a href="{{ url_for('rsvp') }}">RSVP</a>
+      </div>
+    </div>
+  </section>
+
+{% include "footer.html" %}

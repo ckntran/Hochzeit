@@ -1,0 +1,27 @@
+{% include "header.html" %}
+{% from "bootstrap5/form.html" import render_form %}
+
+  <section class="colored-section" id="infoForm">
+    <div class="container-fluid">
+      <div class="formDiv">
+        <h1>Celebrate With Us</h1>
+      </div>
+      <p>We hope you’ll join us for this special day.</p>
+    </div>
+  </section>
+
+<section class="white-section" id="guestForm">
+    <div class="guestFormDiv">
+        <p>We look forward to seeing you! Fill out form below.<br>Please respond to our RSVP by April 20, 2024.</p>
+    </div>
+    <div class="container-fluid">
+        <div class="row mx-auto">
+            <div class="col-6 mx-auto">
+              {{ render_form(form, novalidate=True, button_map={"submit": "dark"}) }}
+            </div>
+        </div>
+    </div>
+</section>
+
+
+{% include "footer.html" %}

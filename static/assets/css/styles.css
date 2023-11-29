@@ -1,0 +1,267 @@
+
+body {
+  font-family: 'Baskervville', serif;
+  text-align:center;
+}
+
+h1, h2, h3, h4, h5 ,h6 {
+  font-family: 'Baskervville', serif;
+  font-weight: 400;
+}
+
+p {
+  font-family: 'Baskervville', serif;
+  color: #8f8f8f;
+  font-weight: 400;
+}
+
+iframe {
+  padding: 3% 3% 3% 3%;
+  height: 100%;
+  width: 100%
+}
+
+active {
+  font-size: 900px;
+}
+
+/* Sections */
+
+.colored-section {
+  background-color: #F0FBFF;
+  color: #000000;
+}
+
+.white-section {
+  background-color: #fff;
+}
+
+.section {
+  padding-top: 3%;
+  padding-bottom: 1%;
+}
+
+.card-img-top {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+
+/* Navigation Bar */
+
+.navbar {
+  padding: 0 0 0.8rem;
+}
+
+.navbar-brand {
+  font-family: 'Baskervville', serif;
+  font-size: 2rem;
+  font-weight: 550;
+}
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-size: 1rem;
+  font-family: 'Baskervville', serif;
+}
+
+/* Header section */
+
+#header .container-fluid {
+  padding: 1% 1% 1%;
+  text-align: center;
+}
+
+/* Footer Section */
+
+#footer {
+  padding: 1%;
+  font-family: 'Parisienne', cursive;
+}
+
+
+#footer h2 {
+  font-family: 'Parisienne', cursive;
+}
+
+/* Main section */
+
+#main .container-fluid {
+  padding: 0% 5% 5% 5%;
+  text-align: center;
+  position: relative;
+}
+
+#main .mainImage {
+  object-fit: cover;
+  width: 100%;
+  height: 270px;
+}
+
+#main .mainText {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  text-align: left;
+  color: #F0FBFF;
+  font-family: 'Libre Baskerville', serif;
+}
+
+#main .mainButton {
+  position: absolute;
+  top: 25%;
+  left: 10%;
+  text-align: left;
+  color: #fff;
+  font-family: 'Libre Baskerville', serif;
+}
+
+/* Info Section */
+
+#info .container-fluid {
+  padding: 2% 2%;
+  text-align: center;
+}
+
+#info .infoDiv {
+  margin-bottom: 5%;
+}
+
+#info h2 {
+  font-family: 'Libre Baskerville', serif;
+  padding: 0% 5%;
+}
+
+#info p, a {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 1.1rem;
+  color: #272829;
+}
+
+/* Gallery Section */
+
+#gallery .container-fluid {
+  object-fit: contain;
+}
+
+#gallery .row {
+  margin-bottom: 3%;
+}
+
+/* RSVP Section */
+
+#rsvp {
+  padding: 3% 2%;
+}
+
+#rsvp h3 {
+  font-family: 'Libre Baskerville', serif;
+  padding: 2% 5%;
+}
+
+#rsvp a {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 3rem;
+}
+
+/* Hotel Section */
+
+#hotels {
+  font-family: 'Libre Baskerville', serif;
+  padding: 3% 3%;
+}
+
+/* Directions Section */
+
+#directions .container-fluid {
+  object-fit: contain;
+  padding: 3% 3% 3% 3%;
+}
+
+#directions .embed {
+  width: 100%;
+  height: auto;
+}
+
+#directions .logo {
+  width: 35%;
+  height: auto;
+}
+
+
+#directions .dirLogo {
+  text-align: right;
+  justify-content: center;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+#directions .dirText {
+  text-align: left;
+  justify-content: center;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+#directions p {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 0.8rem;
+}
+
+/* Form section */
+
+#infoForm h1, p {
+  font-family: 'Libre Baskerville', serif;
+}
+
+#infoForm .container-fluid {
+  padding: 3% 3%;
+}
+
+#infoForm .formDiv {
+  padding-bottom: 3%;
+}
+
+#guestForm p {
+  font-family: 'Libre Baskerville', serif;
+  font-weight: 300;
+}
+
+#guestForm .guestFormDiv {
+    padding-top: 3%;
+    padding-bottom: 3%;
+    text-align: center;
+}
+
+#guestForm .container-fluid {
+    padding-bottom: 5%;
+    text-align: left;
+}
+
+/* WeddingDay section */
+
+#weddingDay h1, p {
+  font-family: 'Libre Baskerville', serif;
+}
+
+#weddingDay .container-fluid {
+  padding: 3% 3%;
+}
+
+#weddingDay .formDiv {
+  padding-bottom: 3%;
+}
+
+/* timeline section */
+#timeline h1 {
+  font-family: 'Libre Baskerville', serif;
+}
+
+#timeline .container-fluid {
+  padding: 10% 10%;
+}
