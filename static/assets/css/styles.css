@@ -1,6 +1,8 @@
 
 body {
   font-family: 'Baskervville', serif;
+  background-color: #F0FBFF;
+  overflow-x: hidden;
   text-align:center;
 }
 
@@ -258,11 +260,29 @@ active {
   padding-bottom: 3%;
 }
 
-/* timeline section */
+/* Timeline section */
 #timeline h1 {
   font-family: 'Libre Baskerville', serif;
 }
 
 #timeline .container-fluid {
   padding: 10% 10%;
+}
+
+/* Photos section */
+
+#photosInfo h1, p {
+  font-family: 'Libre Baskerville', serif;
+}
+
+#photosInfo .container-fluid {
+  padding: 3% 3%;
+}
+
+#photosInfo .formDiv {
+  padding-bottom: 3%;
+}
+
+#photos .container-fluid {
+  padding: 5% 5%;
 }

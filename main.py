@@ -71,6 +71,10 @@ def rsvp():
 def the_wedding_day():
     return render_template("the-wedding-day.html")
 
+@app.route("/photos")
+def photos():
+    return render_template("photos.html")
+
 
 if __name__ == '__main__':
-    app.run(debug=False)
+    app.run(debug=True)

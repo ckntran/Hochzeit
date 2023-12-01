@@ -64,6 +64,11 @@
                     {% if request.path == "/the-wedding-day" %}<strong><u>The Wedding Day</u></strong>{% else %}The Wedding Day{% endif %}
                   </a>
                 </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{{ url_for('photos') }}">
+                    {% if request.path == "/photos" %}<strong><u>Photos</u></strong>{% else %}Photos{% endif %}
+                  </a>
+                </li>
               </ul>
             </div>
           </nav>
