@@ -65,11 +65,46 @@ active {
 
 .nav-item {
   padding: 0 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .nav-link {
   font-size: 1rem;
   font-family: 'Baskervville', serif;
+}
+
+/* Language Dropdown */
+
+#dropdownMenuLink {
+    background: #F0FBFF;
+    color: #000000A6;
+    border: none;
+}
+
+.dropdown-menu {
+    background: #7D7C7C;
+    border: none;
+    opacity: 90%;
+}
+
+.dropdown-item {
+    color: #FFFFFF;
+}
+
+.dropdown-toggle {
+  font-size: 12px;
+}
+
+.dropdown-item {
+  font-size: 10px;
+}
+
+.flag {
+  width: 15px;
+  height: 10px;
+  padding-bottom: 4px;
 }
 
 /* Header section */
@@ -110,7 +145,7 @@ active {
   top: 10%;
   left: 10%;
   text-align: left;
-  color: #F0FBFF;
+  color: #E48F45;
   font-family: 'Libre Baskerville', serif;
 }
 
@@ -119,8 +154,9 @@ active {
   top: 25%;
   left: 10%;
   text-align: left;
-  color: #fff;
+  color: #E48F45;
   font-family: 'Libre Baskerville', serif;
+  opacity: 0.90;
 }
 
 /* Info Section */
@@ -193,28 +229,26 @@ active {
 }
 
 #directions .logo {
-  width: 35%;
+  width: 30px;
   height: auto;
 }
 
-
 #directions .dirLogo {
-  text-align: right;
+  display: flex;
+  align-items: center;
   justify-content: center;
-  padding-top: 1%;
-  padding-bottom: 1%;
 }
 
 #directions .dirText {
   text-align: left;
-  justify-content: center;
-  padding-top: 1%;
-  padding-bottom: 1%;
+  display: flex;
+  align-items: center;
 }
 
 #directions p {
   font-family: 'Libre Baskerville', serif;
   font-size: 0.8rem;
+  margin: 0% 0% 0% 0%;
 }
 
 /* Form section */

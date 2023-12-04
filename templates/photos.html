@@ -1,18 +1,35 @@
 {% include "header.html" %}
 
-  <section class="colored-section" id="photosInfo">
+<section class="colored-section" id="photosInfo">
     <div class="container-fluid">
-      <div class="formDiv">
-        <h1>Let's share our memories!</h1>
-      </div>
-      <p>You can download and upload any media here.</p>
+        <div class="formDiv">
+            <h1>
+                {% if lang == None or lang == 'en' %}
+                Let's share our memories!
+                {% elif lang == 'de' %}
+                Lasst uns die Erinnerungen teilen!
+                {% elif lang == 'tw' %}
+                和我們一起分享回憶
+                {% endif %}
+            </h1>
+        </div>
+        <p>
+            {% if lang == None or lang == 'en' %}
+            You can download and upload any photos and videos here.
+            {% elif lang == 'de' %}
+            Hier können alle Fotos und Videos herunter- und hochgeladen werden.
+            {% elif lang == 'tw' %}
+            這裡可以下載與上傳任何照片和影片.
+            {% endif %}
+        </p>
     </div>
-  </section>
+</section>
 
 <!-- Timeline -->
 <section class="white-section" id="photos">
     <div class="container-fluid">
-<iframe src="https://drive.google.com/embeddedfolderview?id=170F_fz9UdY6LZWxlRuyDfrZ2N_8-p-ka#list" width="100%" height="100%" frameborder="0"></iframe>
+        <iframe src="https://drive.google.com/embeddedfolderview?id=170F_fz9UdY6LZWxlRuyDfrZ2N_8-p-ka#list" width="100%"
+                height="100%" frameborder="0"></iframe>
     </div>
 </section>
 

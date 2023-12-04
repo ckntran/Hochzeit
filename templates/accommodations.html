@@ -1,47 +1,119 @@
 {% include "header.html" %}
 
-      <!-- Hotels -->
-      <section class="white-section" id="hotels">
+<!-- Hotels -->
+<section class="white-section" id="hotels">
 
-          <div class="row justify-content-center">
-            <div class="col-md-4 col-12 mx-auto accCard">
-                <div class="card mx-auto" style="width: 18rem;">
-                    <img class="card-img-top" src="{{ url_for('static', filename='images/hotel.png') }}" alt="Hotel 1">
-                    <div class="card-body">
-                      <h5 class="card-title"><strong>Hotel Himmel und Havel</strong></h5>
-                      <p class="card-text">Aalemannufer 31, 13587 Berlin<br>(1km from location)</p>
-                      <p class="card-text">Tel: +49 30 89 78 84 66</p>
-                      <p class="card-text">info@himmel-und-havel.de</p>
-                      <a href="https://himmel-und-havel.de/" target="_blank" class="btn btn-dark">More Information</a>
-                    </div>
-                  </div>
+    <div class="row justify-content-center">
+        <div class="col-md-4 col-12 mx-auto accCard">
+            <div class="card mx-auto" style="width: 18rem;">
+                <img class="card-img-top" src="{{ url_for('static', filename='images/hotel.png') }}" alt="Hotel 1">
+                <div class="card-body">
+                    <h5 class="card-title"><strong>Hotel Himmel und Havel</strong></h5>
+                    <p class="card-text">Aalemannufer 31, 13587 Berlin<br>
+                        {% if lang == None or lang == 'en' %}
+                        (1 km from location)
+                        {% elif lang == 'de' %}
+                        (1 km vom Hochzeitsort entfernt)
+                        {% elif lang == 'tw' %}
+                        (距離地點 1 公里)
+                        {% endif %}
+                    </p>
+                    <p class="card-text">
+                        {% if lang == None or lang == 'en' %}
+                        Tel: +49 30 89 78 84 66
+                        {% elif lang == 'de' %}
+                        Tel: +49 30 89 78 84 66
+                        {% elif lang == 'tw' %}
+                        電話: +49 30 89 78 84 66
+                        {% endif %}
+                    </p>
+                    <p class="card-text">info@himmel-und-havel.de</p>
+                    <a href="https://himmel-und-havel.de/" target="_blank" class="btn btn-dark">
+                        {% if lang == None or lang == 'en' %}
+                        More Information
+                        {% elif lang == 'de' %}
+                        Weitere Informationen
+                        {% elif lang == 'tw' %}
+                        詳細資訊
+                        {% endif %}
+                    </a>
+                </div>
             </div>
-            <div class="col-md-4 col-12 mx-auto accCard">
-                <div class="card mx-auto" style="width: 18rem;">
-                    <img class="card-img-top" src="{{ url_for('static', filename='images/hotel.png') }}" alt="Hotel 2">
-                    <div class="card-body">
-                        <h5 class="card-title"><strong>Centro Vital</strong></h5>
-                        <p class="card-text">Neuendorfer Str. 25, 13585 Berlin<br>(2km from location)</p>
-                        <p class="card-text">Tel: +49 30 818 750</p>
-                        <p class="card-text">info@centrovital-berlin.de</p>
-                        <a href="https://www.centrovital-berlin.de/" target="_blank" class="btn btn-dark">More Information</a>
-                      </div>
-                  </div>
+        </div>
+        <div class="col-md-4 col-12 mx-auto accCard">
+            <div class="card mx-auto" style="width: 18rem;">
+                <img class="card-img-top" src="{{ url_for('static', filename='images/hotel.png') }}" alt="Hotel 2">
+                <div class="card-body">
+                    <h5 class="card-title"><strong>Centro Vital</strong></h5>
+                    <p class="card-text">Neuendorfer Str. 25, 13585 Berlin<br>
+                        {% if lang == None or lang == 'en' %}
+                        (2 km from location)
+                        {% elif lang == 'de' %}
+                        (2 km vom Hochzeitsort entfernt)
+                        {% elif lang == 'tw' %}
+                        (距離地點 2 公里)
+                        {% endif %}
+                    </p>
+                    <p class="card-text">
+                        {% if lang == None or lang == 'en' %}
+                        Tel: +49 30 818 750
+                        {% elif lang == 'de' %}
+                        Tel: +49 30 818 750
+                        {% elif lang == 'tw' %}
+                        電話: +49 30 818 750
+                        {% endif %}
+                    </p>
+                    <p class="card-text">info@centrovital-berlin.de</p>
+                    <a href="https://www.centrovital-berlin.de/" target="_blank" class="btn btn-dark">
+                        {% if lang == None or lang == 'en' %}
+                        More Information
+                        {% elif lang == 'de' %}
+                        Weitere Informationen
+                        {% elif lang == 'tw' %}
+                        詳細資訊
+                        {% endif %}
+                    </a>
+                </div>
             </div>
-            <div class="col-md-4 col-12 mx-auto accCard">
-                <div class="card mx-auto" style="width: 18rem;">
-                    <img class="card-img-top" src="{{ url_for('static', filename='images/hotel.png') }} " alt="Hotel 3">
-                    <div class="card-body">
-                        <h5 class="card-title"><strong>Holiday Inn City West</strong></h5>
-                        <p class="card-text">Rohrdamm 80, 13969 Berlin<br>(7km from location)</p>
-                        <p class="card-text">Tel: +49 30 383890</p>
-                        <p class="card-text">info.ber03@gchhotelgroup.com</p>
-                        <a href="https://www.hotel-berlin-city-west.com/de/" target="_blank" class="btn btn-dark">More Information</a>
-                      </div>
-                  </div>
+        </div>
+        <div class="col-md-4 col-12 mx-auto accCard">
+            <div class="card mx-auto" style="width: 18rem;">
+                <img class="card-img-top" src="{{ url_for('static', filename='images/hotel.png') }} " alt="Hotel 3">
+                <div class="card-body">
+                    <h5 class="card-title"><strong>Holiday Inn City West</strong></h5>
+                    <p class="card-text">Rohrdamm 80, 13969 Berlin<br>
+                        {% if lang == None or lang == 'en' %}
+                        (7 km from location)
+                        {% elif lang == 'de' %}
+                        (7 km vom Hochzeitsort entfernt)
+                        {% elif lang == 'tw' %}
+                        (距離地點 7 公里)
+                        {% endif %}
+                    </p>
+                    <p class="card-text">
+                        {% if lang == None or lang == 'en' %}
+                        Tel: +49 30 383890
+                        {% elif lang == 'de' %}
+                        Tel: +49 30 383890
+                        {% elif lang == 'tw' %}
+                        電話: +49 30 383890
+                        {% endif %}
+                    </p>
+                    <p class="card-text">info.ber03@gchhotelgroup.com</p>
+                    <a href="https://www.hotel-berlin-city-west.com/de/" target="_blank" class="btn btn-dark">
+                        {% if lang == None or lang == 'en' %}
+                        More Information
+                        {% elif lang == 'de' %}
+                        Weitere Informationen
+                        {% elif lang == 'tw' %}
+                        詳細資訊
+                        {% endif %}
+                    </a>
+                </div>
             </div>
-          </div>
+        </div>
+    </div>
 
-      </section>
+</section>
 
 {% include "footer.html" %}

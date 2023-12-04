@@ -2,75 +2,238 @@
 <html>
 
 <head>
-  <meta charset="utf-8">
-  <title>Our Wedding</title>
+    <meta charset="utf-8">
+    <title>Our Wedding</title>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Baskervville&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baskervville&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
 
-  <!-- CSS Stylesheets -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/styles.css') }}">
+    <!-- CSS Stylesheets -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/styles.css') }}">
 
-  <!-- Font Awesome -->
-  <script src="https://kit.fontawesome.com/417969911d.js" crossorigin="anonymous"></script>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/417969911d.js" crossorigin="anonymous"></script>
 
-  <!-- Bootstrap Scripts -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <!-- Bootstrap Scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+            crossorigin="anonymous"></script>
 </head>
 
 <body>
 
-    <section class="colored-section" id="header">
-        <div class="container-fluid">
+<section class="colored-section" id="header">
+    <div class="container-fluid">
 
-          <!-- Nav Bar -->
-          <nav class="navbar navbar-expand-lg navbar-light justify-content-center">
-            <a class="navbar-brand" href="{{ url_for('home') }}">
-              {% if request.path == "/home" %}<strong>Our Wedding</strong>{% else %}Our Wedding{% endif %}
+        <!-- Nav Bar -->
+        <nav class="navbar navbar-expand-lg navbar-light justify-content-center">
+            <a class="navbar-brand" href="
+             {% if lang == None or lang == 'en' %}
+              {{ url_for('home', lang='en') }}
+             {% elif lang == 'de' %}
+              {{ url_for('home', lang='de') }}
+             {% elif lang == 'tw' %}
+              {{ url_for('home', lang='tw') }}
+             {% endif %}
+            ">
+                {% if lang == None or lang == "en" %}
+                Our Wedding
+                {% elif lang == "de" %}
+                Wir Heiraten!
+                {% elif lang == "tw" %}
+                我們要結婚了!
+                {% endif %}
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
-          </nav>
-          <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
-              <ul class="navbar-nav ml-auto">
+        </nav>
+    </div>
+    <div class="col-1 mx-auto ">
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                  <a class="nav-link" href="{{ url_for('rsvp') }}">
-                  {% if request.path == "/rsvp" %}<strong><u>RSVP</u></strong>{% else %}RSVP{% endif %}
-                  </a>
+                    <a class="nav-link" href="
+             {% if lang == None or lang == 'en' %}
+              {{ url_for('rsvp', lang='en') }}
+             {% elif lang == 'de' %}
+              {{ url_for('rsvp', lang='de') }}
+             {% elif lang == 'tw' %}
+              {{ url_for('rsvp', lang='tw') }}
+             {% endif %}
+                ">
+                        {% if lang == None or lang == "en" %}
+                        {% if 'rsvp' in request.path %}<strong>RSVP</strong>{% else %}RSVP{% endif %}
+                        {% elif lang == "de" %}
+                        {% if 'rsvp' in request.path %}<strong>Rückmeldung</strong>{% else %}Rückmeldung{% endif %}
+                        {% elif lang == "tw" %}
+                        {% if 'rsvp' in request.path %}<strong>請填表單</strong>{% else %}請填表單{% endif %}
+                        {% endif %}
+                    </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="{{ url_for('accommodations') }}">
-                    {% if request.path == "/accommodations" %}<strong><u>Accommodations</u></strong>{% else %}Accommodations{% endif %}
-                  </a>
+                    <a class="nav-link" href="
+             {% if lang == None or lang == 'en' %}
+              {{ url_for('accommodations', lang='en') }}
+             {% elif lang == 'de' %}
+              {{ url_for('accommodations', lang='de') }}
+             {% elif lang == 'tw' %}
+              {{ url_for('accommodations', lang='tw') }}
+             {% endif %}
+                ">
+                        {% if lang == None or lang == "en" %}
+                        {% if 'accommodation' in request.path %}<strong>Accommodations</strong>{% else
+                        %}Accommodations{% endif %}
+                        {% elif lang == "de" %}
+                        {% if 'accommodation' in request.path %}<strong>Unterkunft</strong>{% else %}Unterkunft{% endif
+                        %}
+                        {% elif lang == "tw" %}
+                        {% if 'accommodation' in request.path %}<strong>住宿</strong>{% else %}住宿{% endif %}
+                        {% endif %}
+                    </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="{{ url_for('directions') }}">
-                    {% if request.path == "/directions" %}<strong><u>Directions</u></strong>{% else %}Directions{% endif %}
-                  </a>
+                    <a class="nav-link" href="
+             {% if lang == None or lang == 'en' %}
+              {{ url_for('directions', lang='en') }}
+             {% elif lang == 'de' %}
+              {{ url_for('directions', lang='de') }}
+             {% elif lang == 'tw' %}
+              {{ url_for('directions', lang='tw') }}
+             {% endif %}
+                ">
+                        {% if lang == None or lang == "en" %}
+                        {% if 'direction' in request.path %}<strong>Directions</strong>{% else %}Directions{% endif %}
+                        {% elif lang == "de" %}
+                        {% if 'direction' in request.path %}<strong>Anfahrt</strong>{% else %}Anfahrt{% endif %}
+                        {% elif lang == "tw" %}
+                        {% if 'direction' in request.path %}<strong>交通方式</strong>{% else %}交通方式{% endif %}
+                        {% endif %}
+                    </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="{{ url_for('the_wedding_day') }}">
-                    {% if request.path == "/the-wedding-day" %}<strong><u>The Wedding Day</u></strong>{% else %}The Wedding Day{% endif %}
-                  </a>
+                    <a class="nav-link" href="
+             {% if lang == None or lang == 'en' %}
+              {{ url_for('the_wedding_day', lang='en') }}
+             {% elif lang == 'de' %}
+              {{ url_for('the_wedding_day', lang='de') }}
+             {% elif lang == 'tw' %}
+              {{ url_for('the_wedding_day', lang='tw') }}
+             {% endif %}
+                ">
+                        {% if lang == None or lang == "en" %}
+                        {% if 'the-wedding-day' in request.path %}<strong>The Wedding Day</strong>{% else %}The Wedding
+                        Day{% endif %}
+                        {% elif lang == "de" %}
+                        {% if 'the-wedding-day' in request.path %}<strong>Am Tag der Hochzeit</strong>{% else %}Am Tag
+                        der Hochzeit{% endif %}
+                        {% elif lang == "tw" %}
+                        {% if 'the-wedding-day' in request.path %}<strong>婚禮當天</strong>{% else %}婚禮當天{% endif %}
+                        {% endif %}
+                    </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="{{ url_for('photos') }}">
-                    {% if request.path == "/photos" %}<strong><u>Photos</u></strong>{% else %}Photos{% endif %}
-                  </a>
+                    <a class="nav-link" href="
+             {% if lang == None or lang == 'en' %}
+              {{ url_for('photos', lang='en') }}
+             {% elif lang == 'de' %}
+              {{ url_for('photos', lang='de') }}
+             {% elif lang == 'tw' %}
+              {{ url_for('photos', lang='tw') }}
+             {% endif %}
+                ">
+                        {% if lang == None or lang == "en" %}
+                        {% if 'photo' in request.path %}<strong>Photos</strong>{% else %}Photos{% endif %}
+                        {% elif lang == "de" %}
+                        {% if 'photo' in request.path %}<strong>Bilder</strong>{% else %}Bilder{% endif %}
+                        {% elif lang == "tw" %}
+                        {% if 'photo' in request.path %}<strong>照片</strong>{% else %}照片{% endif %}
+                        {% endif %}
+                    </a>
                 </li>
-              </ul>
-            </div>
-          </nav>
+                <li class="nav-item">
+                    <div class="dropdown">
+                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            {% if lang == None or lang == "en" %}
+                            <img src="{{ url_for('static', filename='images/great-britain-flag.png') }}"
+                                 class="img-fluid flag" alt="Great-Britain-Flag"> | EN
+                            {% elif lang == "de" %}
+                            <img src="{{ url_for('static', filename='images/germany-flag.png') }}"
+                                 class="img-fluid flag" alt="Germany-Flag"> | DE
+                            {% elif lang == "tw" %}
+                            <img src="{{ url_for('static', filename='images/taiwan-flag.png') }}" class="img-fluid flag"
+                                 alt="Taiwan-Flag"> | TW
+                            {% endif %}
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <li><a class="dropdown-item" href="
+                  {% if 'rsvp' in request.path %}
+                    {{ url_for('rsvp', lang='en') }}
+                  {% elif 'accommodation' in request.path %}
+                    {{ url_for('accommodations', lang='en') }}
+                  {% elif 'direction' in request.path %}
+                    {{ url_for('directions', lang='en') }}
+                  {% elif 'the-wedding-day' in request.path %}
+                    {{ url_for('the_wedding_day', lang='en') }}
+                  {% elif 'photo' in request.path %}
+                    {{ url_for('photos', lang='en') }}
+                  {% else %}
+                    {{ url_for('home', lang='en') }}
+                  {% endif %}"><img src="{{ url_for('static', filename='images/great-britain-flag.png') }}"
+                                    class="img-fluid flag" alt="Great-Britain-Flag"> | EN</a></li>
+                            <li><a class="dropdown-item" href="
+                  {% if 'rsvp' in request.path %}
+                    {{ url_for('rsvp', lang='de') }}
+                  {% elif 'accommodation' in request.path %}
+                    {{ url_for('accommodations', lang='de') }}
+                  {% elif 'direction' in request.path %}
+                    {{ url_for('directions', lang='de') }}
+                  {% elif 'the-wedding-day' in request.path %}
+                    {{ url_for('the_wedding_day', lang='de') }}
+                  {% elif 'photo' in request.path %}
+                    {{ url_for('photos', lang='de') }}
+                  {% else %}
+                    {{ url_for('home', lang='de') }}
+                  {% endif %}"><img src="{{ url_for('static', filename='images/germany-flag.png') }}"
+                                    class="img-fluid flag" alt="Germany-Flag"> | DE</a></li>
+                            <li><a class="dropdown-item" href="
+                  {% if 'rsvp' in request.path %}
+                    {{ url_for('rsvp', lang='tw') }}
+                  {% elif 'accommodation' in request.path %}
+                    {{ url_for('accommodations', lang='tw') }}
+                  {% elif 'direction' in request.path %}
+                    {{ url_for('directions', lang='tw') }}
+                  {% elif 'the-wedding-day' in request.path %}
+                    {{ url_for('the_wedding_day', lang='tw') }}
+                  {% elif 'photo' in request.path %}
+                    {{ url_for('photos', lang='tw') }}
+                  {% else %}
+                    {{ url_for('home', lang='tw') }}
+                  {% endif %}"><img src="{{ url_for('static', filename='images/taiwan-flag.png') }}"
+                                    class="img-fluid flag" alt="Taiwan-Flag"> | TW</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
         </div>
-      </section>
+    </nav>
+    </div>
+</section>

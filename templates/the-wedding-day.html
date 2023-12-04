@@ -1,18 +1,42 @@
 {% include "header.html" %}
 
-  <section class="colored-section" id="weddingDay">
+<section class="colored-section" id="weddingDay">
     <div class="container-fluid">
-      <div class="formDiv">
-        <h1>Coming soon!</h1>
-      </div>
-      <p>You'll find the plan for our special day here.</p>
+        <div class="formDiv">
+            <h1>
+                {% if lang == None or lang == 'en' %}
+                Coming soon!
+                {% elif lang == 'de' %}
+                Weitere Informationen kommen in Kürze!
+                {% elif lang == 'tw' %}
+                敬請期待
+                {% endif %}
+            </h1>
+        </div>
+        <p>
+            {% if lang == None or lang == 'en' %}
+            You'll find the plan for our special day here.
+            {% elif lang == 'de' %}
+            Der genaue Plan und Ablauf für unseren Tag wird hier stehen.
+            {% elif lang == 'tw' %}
+            婚禮當天行程會公佈在這裡
+            {% endif %}
+        </p>
     </div>
-  </section>
+</section>
 
 <!-- Timeline -->
 <section class="white-section" id="timeline">
     <div class="container-fluid">
-        <h1>Check back later!</h1>
+        <h1>
+            {% if lang == None or lang == 'en' %}
+            Check back later!
+            {% elif lang == 'de' %}
+            Schau später wieder vorbei!
+            {% elif lang == 'tw' %}
+            稍後回來！
+            {% endif %}
+        </h1>
     </div>
 </section>
 
