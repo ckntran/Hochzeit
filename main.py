@@ -46,7 +46,7 @@ def rsvp(lang=None):
 
     if form.validate_on_submit():
         response = requests.get(url=sheety_endpoint, headers=bearer_headers).json()['guests']
-        data = [guest for guest in response if form.first_name.data.lower() in guest['firstName'].lower() and form.last_name.data.lower() in guest['lastName'].lower()]
+        data = [guest for guest in response if form.first_name.data.lower().strip() in guest['firstName'].lower().strip() and form.last_name.data.lower().strip() in guest['lastName'].lower().strip()]
         if len(data) > 0:
             return render_template("rsvp.html", form=form, data=data, double_entry=True, lang=lang)
         else:
@@ -80,4 +80,4 @@ def photos(lang=None):
 
 
 if __name__ == '__main__':
-    app.run(debug=False)
+    app.run(debug=True)
