@@ -82,4 +82,4 @@ def faq(lang=None):
     return render_template("FAQ.html", lang=lang)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=False)
