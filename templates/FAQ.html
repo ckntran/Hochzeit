@@ -1,0 +1,139 @@
+{% include "header.html" %}
+
+<section class="colored-section" id="faq">
+    <div class="container-fluid">
+        <button class="accordion">
+            {% if lang == None or lang == 'en' %}
+            Is there a dresscode?
+            {% elif lang == 'de' %}
+            Gibt es einen Dresscode?
+            {% endif %}
+        </button>
+        <div class="panel">
+          <p>
+            {% if lang == None or lang == 'en' %}
+            We do not have any dress code rules, but keep in mind the following points when making your outfit decision for the day:
+              <br>
+              &#9792 The bride will wear a white dress.
+              <br>
+              &#9794 The groom will wear a beige suite.
+              <br>
+              &#9728 The wedding will be set in the middle of the summer, so we suggest to wear something light and summery in order to avoid absorbing too much sunlight.
+            {% elif lang == 'de' %}
+            Es gibt keinen Dresscode, aber beachtet folgende Punkte wenn ihr euch für euer Outfit entscheidet:
+              <br>
+              &#9792 Die Braut wird ein weißes Kleid tragen.
+              <br>
+              &#9794 Der Bräutigam wird einen beigen Anzug tragen.
+              <br>
+              &#9728 Die Hochzeit findet mitten im Sommer statt, daher empfehlen wir euch, etwas Leichtes und Sommerliches zu tragen, damit ihr nicht zu viel Sonnenlicht abbekommen.
+            {% endif %}
+          </p>
+        </div>
+
+        <button class="accordion">
+            {% if lang == None or lang == 'en' %}
+            Do you have a wedding registry/particular wedding gift wishes?
+            {% elif lang == 'de' %}
+            Was wünscht ihr euch als Geschenk zur Hochzeit?
+            {% endif %}
+        </button>
+        <div class="panel">
+          <p>
+            {% if lang == None or lang == 'en' %}
+            Your presence at the wedding is already the greatest gift to us. However, we plan a longer Asia round trip for our honeymoon - if you wish to support us (as a gift at the wedding or via <a href="https://www.paypal.me/ChristianKhaiNamTran">PayPal</a>), we are happy to accept any financial contribution!
+            {% elif lang == 'de' %}
+            Eure Anwesenheit ist für uns das größte Geschenk. Jedoch planen wir als Flitterwochen eine längere Rundreise in Asien - finanzielle Beiträge (entweder als Geschenk am Hochzeitstag oder via <a href="https://www.paypal.me/ChristianKhaiNamTran">PayPal</a>) sind daher herzlich willkommen!
+            {% endif %}
+          </p>
+        </div>
+
+        <button class="accordion">
+            {% if lang == None or lang == 'en' %}
+            How do I upload/download any pictures & videos from the wedding?
+            {% elif lang == 'de' %}
+            Wie kann ich Fotos & Videos von der Hochzeit hoch- oder runterladen?
+            {% endif %}
+        </button>
+        <div class="panel">
+          <p>
+            {% if lang == None or lang == 'en' %}
+                You can upload any photos and videos via <a href="https://docs.google.com/forms/d/e/1FAIpQLScVXYDturm0Wc6RSvhN5xCiI1DQoTUmLAN2i6apIXUBcmn3FA/viewform">
+                this form</a>, and download any content via the <a href="{{ url_for('photos', lang='en') }}">
+                Media section</a>. We have a wedding live-feed - whatever you will upload during the day, we will display on the big screen!
+            {% elif lang == 'de' %}
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLScVXYDturm0Wc6RSvhN5xCiI1DQoTUmLAN2i6apIXUBcmn3FA/viewform">
+                Mit diesem Formular</a> können eure Fotos und Videos hochgeladen werden. Alle Medien sind in der Section <a href="{{ url_for('photos', lang='de') }}">
+                Medien</a> herunterladbar. Wir haben einen Hochzeits Live-Feed - alles, was ihr am Tag der Hochzeit hochlädt, werden wir live auf der Leinwand abspielen!
+            {% endif %}
+          </p>
+        </div>
+
+        <button class="accordion">
+            {% if lang == None or lang == 'en' %}
+            How long will the party last?
+            {% elif lang == 'de' %}
+            Wie lange geht die Party?
+            {% endif %}
+        </button>
+        <div class="panel">
+          <p>
+            {% if lang == None or lang == 'en' %}
+            The venue is booked until 2am.
+            {% elif lang == 'de' %}
+            Der Veranstaltungsort ist bis 2 Uhr morgens gebucht.
+            {% endif %}
+          </p>
+        </div>
+
+        <button class="accordion">
+            {% if lang == None or lang == 'en' %}
+            Will there be any taxi service provided?
+            {% elif lang == 'de' %}
+            Wird ein Taxiservice zur Verfügung gestellt?
+            {% endif %}
+        </button>
+        <div class="panel">
+          <p>
+            {% if lang == None or lang == 'en' %}
+            Yes! Whenever you want to leave the location, the service staff will call you a taxi which should arrive
+              within 5 to 15 minutes. Uber service is also available in this area, although with a longer wait time depending on the time of the day.
+            {% elif lang == 'de' %}
+            Ja! Die Servicekräfte können jederzeit ein Taxi rufen, welches innerhalb von 5 bis 15 Minuten erscheinen sollte.
+              Uber und ähnliche Fahrdienste sind dort auch verfügbar - je nachdem, wie spät es ist, könnten die Wartezeiten jedoch etwas länger werden.
+            {% endif %}
+          </p>
+        </div>
+
+        <button class="accordion">
+            {% if lang == None or lang == 'en' %}
+            I'm not often coming to Berlin - any recommendations?
+            {% elif lang == 'de' %}
+            Ich bin nicht oft in Berlin - habt ihr irgendwelche Empfehlungen?
+            {% endif %}
+        </button>
+        <div class="panel">
+          <p>
+            {% if lang == None or lang == 'en' %}
+              If it is your first time visiting, you can go to Berlin's famous
+              <a href="https://www.visitberlin.de/de/top-10-sehenswuerdigkeiten-berlin">sightseeing attractions</a>
+              and <a href="https://www.berlin.de/museum/top-20/">museums</a>, and walk around the
+              <a href="https://www.lonelyplanet.com/articles/best-neighborhoods-in-berlin">various neighborhoods</a>
+              to explore the city. For foodies, we have curated a <a href="https://maps.app.goo.gl/YBxffmwfn6ajj4Bi9">
+              list of the in our opinion best food options</a> in Berlin.
+            {% elif lang == 'de' %}
+              Falls dies euer erster Trip nach Berlin ist, würden wir euch empfehlen, die bekanntesten
+              <a href="https://www.visitberlin.de/de/top-10-sehenswuerdigkeiten-berlin">Sehenswürdigkeiten </a> und
+              <a href="https://www.berlin.de/museum/top-20/">Museen</a> anzuschauen sowie die
+              <a href="https://www.lonelyplanet.com/articles/best-neighborhoods-in-berlin">verschiedenen Stadteile</a>
+              Berlins zu erkunden. Für Foodies haben wir eine <a href="https://maps.app.goo.gl/YBxffmwfn6ajj4Bi9">
+              Liste von Restaurants</a> in Berlin für euch zusammengestellt.
+            {% endif %}
+          </p>
+        </div>
+    </div>
+</section>
+
+<script src="{{ url_for('static', filename='assets/js/accordion.js') }}"></script>
+
+{% include "footer.html" %}

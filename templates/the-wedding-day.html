@@ -5,38 +5,128 @@
         <div class="formDiv">
             <h1>
                 {% if lang == None or lang == 'en' %}
-                Coming soon!
+                This is how we want to celebrate with you!
                 {% elif lang == 'de' %}
-                Weitere Informationen kommen in Kürze!
-                {% elif lang == 'tw' %}
-                敬請期待
+                So wollen wir unseren Tag mit euch feiern!
                 {% endif %}
             </h1>
         </div>
-        <p>
-            {% if lang == None or lang == 'en' %}
-            You'll find the plan for our special day here.
-            {% elif lang == 'de' %}
-            Der genaue Plan und Ablauf für unseren Tag wird hier stehen.
-            {% elif lang == 'tw' %}
-            婚禮當天行程會公佈在這裡
-            {% endif %}
-        </p>
     </div>
 </section>
 
 <!-- Timeline -->
 <section class="white-section" id="timeline">
     <div class="container-fluid">
-        <h1>
-            {% if lang == None or lang == 'en' %}
-            Check back later!
-            {% elif lang == 'de' %}
-            Schau später wieder vorbei!
-            {% elif lang == 'tw' %}
-            稍後回來！
-            {% endif %}
-        </h1>
+        <div class="timeline">
+          <div class="timeline-container left">
+            <div class="content">
+              <h2>
+                {% if lang == None or lang == 'en' %}
+                3pm - Reception
+                {% elif lang == 'de' %}
+                15:00 - Sektempfang
+                {% endif %}
+              </h2>
+              <p>
+                {% if lang == None or lang == 'en' %}
+                Enjoy the spacious garden of the venue with some drinks & finger food!
+                {% elif lang == 'de' %}
+                Genieße den großräumigen Garten des Veranstaltungsortes mit Drinks & Fingerfood!
+                {% endif %}
+              </p>
+            </div>
+          </div>
+          <div class="timeline-container right">
+            <div class="content">
+              <h2>
+                {% if lang == None or lang == 'en' %}
+                4pm - Wedding Ceremony
+                {% elif lang == 'de' %}
+                16:00 - Freie Trauung
+                {% endif %}
+              </h2>
+              <p>
+                {% if lang == None or lang == 'en' %}
+                Celebrate our special moment with us!
+                {% elif lang == 'de' %}
+                Sei dabei, wenn wir uns das Jawort geben!
+                {% endif %}
+              </p>
+            </div>
+          </div>
+          <div class="timeline-container left">
+            <div class="content">
+              <h2>
+                {% if lang == None or lang == 'en' %}
+                5:00pm - Cake-Cutting/Photos/Drinks
+                {% elif lang == 'de' %}
+                17:00 - Tortenanschnitt/Fotos/Drinks
+                {% endif %}
+              </h2>
+              <p>
+                {% if lang == None or lang == 'en' %}
+                Take part in some fun activities before the dinner!
+                {% elif lang == 'de' %}
+                Nehmt an unseren Aktivitäten bevor dem Abendessen teil!
+                {% endif %}
+              </p>
+            </div>
+          </div>
+          <div class="timeline-container right">
+            <div class="content">
+              <h2>
+                {% if lang == None or lang == 'en' %}
+                6:30pm - Dinner
+                {% elif lang == 'de' %}
+                18:30 - Dinner
+                {% endif %}
+              </h2>
+              <p>
+                {% if lang == None or lang == 'en' %}
+                Help yourself to our BBQ buffet!
+                {% elif lang == 'de' %}
+                Langt zu bei unserem BBQ-Buffet!
+                {% endif %}
+              </p>
+            </div>
+          </div>
+          <div class="timeline-container left">
+            <div class="content">
+              <h2>
+                {% if lang == None or lang == 'en' %}
+                9:00pm - Evening program
+                {% elif lang == 'de' %}
+                21:00 - Abendprogramm
+                {% endif %}
+              </h2>
+              <p>
+                {% if lang == None or lang == 'en' %}
+                Participate in our "official" evening program!
+                {% elif lang == 'de' %}
+                Macht mit bei unserem "offiziellen" Abendprogramm!
+                {% endif %}
+              </p>
+            </div>
+          </div>
+          <div class="timeline-container right">
+            <div class="content">
+              <h2>
+                {% if lang == None or lang == 'en' %}
+                9:30pm - Dance, Dance, Dance!
+                {% elif lang == 'de' %}
+                21:30 - Tanzen, Tanzen, Tanzen!
+                {% endif %}
+              </h2>
+              <p>
+                {% if lang == None or lang == 'en' %}
+                Go wild when the dance floor opens!
+                {% elif lang == 'de' %}
+                Seit bereit, wenn die Tanzfläche öffnet!
+                {% endif %}
+              </p>
+            </div>
+          </div>
+        </div>
     </div>
 </section>
 

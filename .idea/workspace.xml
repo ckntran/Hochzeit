@@ -5,11 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e6baaf3d-b460-47a9-b043-fd2581e6783f" name="Changes" comment="Use env variables and create Procfile">
+      <change afterPath="$PROJECT_DIR$/static/assets/js/accordion.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/FAQ.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/menu.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/static/assets/css/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/assets/css/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/accommodations.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/accommodations.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/directions.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/directions.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/header.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/photos.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/photos.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/rsvp.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/rsvp.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/the-wedding-day.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/the-wedding-day.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +27,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -42,6 +50,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\chris\PycharmProjects\WeddingWebsite\static\assets\js" />
       <recent name="C:\Users\chris\PycharmProjects\WeddingWebsite\static\css" />
     </key>
   </component>

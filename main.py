@@ -1,4 +1,4 @@
-from flask import Flask, render_template, redirect, url_for, request, flash
+from flask import Flask, render_template
 from flask_bootstrap import Bootstrap5
 from datetime import datetime
 from forms import GuestForm, GuestForm_de, GuestForm_tw
@@ -66,11 +66,20 @@ def rsvp(lang=None):
 def the_wedding_day(lang=None):
     return render_template("the-wedding-day.html", lang=lang)
 
+@app.route("/menu")
+@app.route("/<lang>/menu")
+def menu(lang=None):
+    return render_template("menu.html", lang=lang)
+
 @app.route("/photos")
 @app.route("/<lang>/photos")
 def photos(lang=None):
     return render_template("photos.html", lang=lang)
 
+@app.route("/faq")
+@app.route("/<lang>/faq")
+def faq(lang=None):
+    return render_template("FAQ.html", lang=lang)
 
 if __name__ == '__main__':
     app.run(debug=True)

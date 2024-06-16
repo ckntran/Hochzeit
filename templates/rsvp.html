@@ -9,8 +9,6 @@
                 Celebrate With Us
                 {% elif lang == 'de' %}
                 Begleite uns an unserem Tag
-                {% elif lang == 'tw' %}
-                與我們一起慶祝
                 {% endif %}
             </h1>
         </div>
@@ -19,8 +17,6 @@
             We hope you’ll join us for this special day.
             {% elif lang == 'de' %}
             Wir hoffen auf euer Erscheinen.
-            {% elif lang == 'tw' %}
-            希望你們來！
             {% endif %}
         </p>
     </div>
@@ -34,8 +30,6 @@
             Thank you for your submission!
             {% elif lang == 'de' %}
             Danke für deine Antwort!
-            {% elif lang == 'tw' %}
-            謝謝！
             {% endif %}
         </strong></h1>
     </section>
@@ -47,8 +41,6 @@
             You have already made your submission. Please contact us for any changes.
             {% elif lang == 'de' %}
             Du hast das Formular schon ausgefüllt. Bitte kontaktiere uns, falls du etwas ändern möchtest.
-            {% elif lang == 'tw' %}
-            你已經提交了表單. 如果想要任何改變請聯絡我們.
             {% endif %}
         </strong></h1>
     </section>
@@ -58,64 +50,48 @@
         First Name
         {% elif lang == 'de' %}
         Vorname
-        {% elif lang == 'tw' %}
-        名
         {% endif %}: </strong>{{ _["firstName"] }}</p>
     <p><strong>
         {% if lang == None or lang == 'en' %}
         Last Name
         {% elif lang == 'de' %}
         Nachname
-        {% elif lang == 'tw' %}
-        姓
         {% endif %}: </strong>{{ _["lastName"] }}</p>
     <p><strong>
         {% if lang == None or lang == 'en' %}
         Email
         {% elif lang == 'de' %}
         E-Mail
-        {% elif lang == 'tw' %}
-        電子郵件
         {% endif %}: </strong>{{ _["email"] }}</p>
     <p><strong>
         {% if lang == None or lang == 'en' %}
         Will you be attending?
         {% elif lang == 'de' %}
         Wirst du dabei sein?
-        {% elif lang == 'tw' %}
-        你會參加嗎？
         {% endif %}: </strong>{{ _["willYouBeAttending?"] }}</p>
     <p><strong>
         {% if lang == None or lang == 'en' %}
         Will you be bringing a guest?
         {% elif lang == 'de' %}
         Wirst du jemanden mitbringen?
-        {% elif lang == 'tw' %}
-        有人同行嗎？
         {% endif %}: </strong>{{ _["willYouBeBringingAGuest?"] }}</p>
     <p><strong>
         {% if lang == None or lang == 'en' %}
         Guest First Name
         {% elif lang == 'de' %}
         Gast Vorname
-        {% elif lang == 'tw' %}
-        同行 名
         {% endif %}: </strong>{{ _["guestFirstName"] }}</p>
     <p><strong>
         {% if lang == None or lang == 'en' %}
         Guest Last Name
         {% elif lang == 'de' %}
         Gast Nachname
-        {% elif lang == 'tw' %}
-        同行 姓
         {% endif %}: </strong>{{ _["guestLastName"] }}</p>
     <p><strong>
         {% if lang == None or lang == 'en' %}
         Any dietary restrictions?
         {% elif lang == 'de' %}
         Irgendwelche Essenseinschränkungen?
-        {% elif lang == 'tw' %}
-        飲食限制？
         {% endif %}: </strong>{{ _["anyDietaryRestrictions?"] }}</p>
     {% endfor %}
     {% endif %}
@@ -125,8 +101,6 @@
             Please respond to our RSVP by April 20, 2024.
             {% elif lang == 'de' %}
             Wir bitten um eure Rückmeldung bis zum 20. April 2024.
-            {% elif lang == 'tw' %}
-            請在2024年4月20號之前回覆.
             {% endif %}
         </p>
     </div>

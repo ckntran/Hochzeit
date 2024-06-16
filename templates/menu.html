@@ -1,0 +1,388 @@
+{% include "header.html" %}
+
+<section class="white-section" id="menu">
+    <div class="container-fluid">
+        <h2>
+            {% if lang == None or lang == 'en' %}
+            Food
+            {% elif lang == 'de' %}
+            Speisen
+            {% endif %}
+        </h2>
+        <hr>
+        <h4>
+            {% if lang == None or lang == 'en' %}
+            Fingerfood (Reception)
+            {% elif lang == 'de' %}
+            Fingerfood (Empfang)
+            {% endif %}
+        </h4>
+        <p>
+            {% if lang == None or lang == 'en' %}
+            Tomato and mango salsa on focaccia with coriander <a style="color:grey">(vegan)</a>
+            {% elif lang == 'de' %}
+            Tomaten-Mango-Salsa auf Focaccia mit Koriander <a style="color:grey">(vegan)</a>
+            {% endif %}
+        </p>
+        <p>
+            {% if lang == None or lang == 'en' %}
+            Avocado cream on bruschetta with crispy capers <a style="color:grey">(vegan)</a>
+            {% elif lang == 'de' %}
+            Avocadocreme auf Bruschetta mit knusprigen Kapern <a style="color:grey">(vegan)</a>
+            {% endif %}
+        </p>
+        <p>
+            {% if lang == None or lang == 'en' %}
+            Tomato and mozzarella skewers with basil pesto <a style="color:grey">(vegetarian)</a>
+            {% elif lang == 'de' %}
+            Tomaten-Mozzarella-Spieße mit Basilikum-Pesto <a style="color:grey">(vegetarisch)</a>
+            {% endif %}
+        </p>
+        <p>
+            {% if lang == None or lang == 'en' %}
+            Falafel skewers with hummus <a style="color:grey">(vegan)</a>
+            {% elif lang == 'de' %}
+            Falafel-Spieße mit Humus <a style="color:grey">(vegan)</a>
+            {% endif %}
+        </p>
+        <p>
+            {% if lang == None or lang == 'en' %}
+            Quiche with Mediterranean vegetables <a style="color:grey">(vegetarian)</a>
+            {% elif lang == 'de' %}
+            Quiche mit mediterranem Gemüse <a style="color:grey">(vegetarisch)</a>
+            {% endif %}
+        </p>
+        <p>
+            {% if lang == None or lang == 'en' %}
+            Mack bread with Serrano ham
+            {% elif lang == 'de' %}
+            Mackbrot mit Serrano-Schinken
+            {% endif %}
+        </p>
+        <br>
+        <h4>
+            {% if lang == None or lang == 'en' %}
+            Dinner (BBQ buffet)
+            {% elif lang == 'de' %}
+            Abendessen (BBQ Buffet)
+            {% endif %}
+        </h4>
+        <p>
+            {% if lang == None or lang == 'en' %}
+            Seasonal salad selection with cherry vine tomatoes, croutons and walnuts, optionally with diced bacon and honey-balsamic dressing
+            {% elif lang == 'de' %}
+            Saisonale Salatauswahl mit Kirschstrauchtomaten, Croutons und Walnüssen, wahlweise mit Speckwürfeln und mit Honig-Balsamico-Dressing
+            {% endif %}
+        </p>
+         <p>
+            {% if lang == None or lang == 'en' %}
+            Farfalle with rucola, fresh and sun-dried tomatoes, parmesan and roasted pine nuts <a style="color:grey">(vegetarian)</a>
+            {% elif lang == 'de' %}
+            Farfalle mit Rucola, frischen sowie getrockneten Tomaten, Parmesan und gerösteten Pinienkernen <a style="color:grey">(vegetarisch)</a>
+            {% endif %}
+        </p>
+         <p>
+            {% if lang == None or lang == 'en' %}
+            Potato and radish salad with French dressing <a style="color:grey">(vegetarian)</a>
+            {% elif lang == 'de' %}
+            Kartoffel-Radieschen-Salat mit Kernöl-French-Dressing <a style="color:grey">(vegetarisch)</a>
+            {% endif %}
+        </p>
+         <p>
+            {% if lang == None or lang == 'en' %}
+            Rump Steaks
+            {% elif lang == 'de' %}
+            Rinderhüftsteaks
+            {% endif %}
+        </p>
+         <p>
+            {% if lang == None or lang == 'en' %}
+            Roast Beef
+            {% elif lang == 'de' %}
+            Medaillons vom Roastbeef
+            {% endif %}
+        </p>
+         <p>
+            {% if lang == None or lang == 'en' %}
+            Honey spare ribs
+            {% elif lang == 'de' %}
+            Honey Spare Rips
+            {% endif %}
+        </p>
+        <p>
+            {% if lang == None or lang == 'en' %}
+            Tandori chicken breast
+            {% elif lang == 'de' %}
+            Tandori-Hähnchenbrust
+            {% endif %}
+        </p>
+        <p>
+            {% if lang == None or lang == 'en' %}
+            Salmon with lemon butter
+            {% elif lang == 'de' %}
+            Lachsfilet in Folie mit Zitronenbutter
+            {% endif %}
+        </p>
+        <p>
+            {% if lang == None or lang == 'en' %}
+            Black tiger prawns marinated in a garlic and thyme marinade
+            {% elif lang == 'de' %}
+            Black Tiger Garnelen, eingelegt in einer Marinade aus Knoblauch und Thymian
+            {% endif %}
+        </p>
+        <p>
+            {% if lang == None or lang == 'en' %}
+            Halloumi with sesame seeds <a style="color:grey">(vegan)</a>
+            {% elif lang == 'de' %}
+            Eingelegter Halloumi mit Sesam <a style="color:grey">(vegan)</a>
+            {% endif %}
+        </p>
+        <p>
+            {% if lang == None or lang == 'en' %}
+            Grilled vegetables: zucchini, corn, eggplant, bell peppers <a style="color:grey">(vegan)</a>
+            {% elif lang == 'de' %}
+            Grillgemüse: Zucchini, Mais, Aubergine, Paprika <a style="color:grey">(vegan)</a>
+            {% endif %}
+        </p>
+        <p>
+            {% if lang == None or lang == 'en' %}
+            Limoncello tiramisu
+            {% elif lang == 'de' %}
+            Limoncello-Tiramisu mit Zitronenmelisse
+            {% endif %}
+        </p>
+        <p>
+            {% if lang == None or lang == 'en' %}
+            Crème brûlée
+            {% elif lang == 'de' %}
+            Crème Brûlée
+            {% endif %}
+        </p>
+        <p>
+            {% if lang == None or lang == 'en' %}
+            Coconut-lime panna cotta with physalis <a style="color:grey">(vegan)</a>
+            {% elif lang == 'de' %}
+            Kokos-Limetten Panna Cotta mit Physalis <a style="color:grey">(vegan)</a>
+            {% endif %}
+        </p>
+        <br>
+        <h4>
+            {% if lang == None or lang == 'en' %}
+            In-between snacks
+            {% elif lang == 'de' %}
+            Snacks für Zwischendurch
+            {% endif %}
+        </h4>
+        <p>
+            {% if lang == None or lang == 'en' %}
+            Fresh waffles with vanilla & cherry sauce <a style="color:grey">(afternoon)</a>
+            {% elif lang == 'de' %}
+            Frische Waffeln mit Vanille-Soße & Kirschkompott <a style="color:grey">(nachmittags)</a>
+            {% endif %}
+        </p>
+        <p>
+            {% if lang == None or lang == 'en' %}
+            Berliner Curry Wurst / Falafel with Humus <a style="color:grey">(late night snack)</a>
+            {% elif lang == 'de' %}
+            Berliner Curry Wurst / Falafel-Bällchen mit Humus <a style="color:grey">(Mitternachtssnack)</a>
+            {% endif %}
+        </p>
+        <p>
+            {% if lang == None or lang == 'en' %}
+            Snack bar
+            {% elif lang == 'de' %}
+            Snack bar
+            {% endif %}
+        </p>
+        </div>
+        <div class="container-fluid">
+        <h2>
+            {% if lang == None or lang == 'en' %}
+            Drinks
+            {% elif lang == 'de' %}
+            Getränke
+            {% endif %}
+        </h2>
+        <hr>
+        <h4>
+            {% if lang == None or lang == 'en' %}
+            Soft Drinks
+            {% elif lang == 'de' %}
+            Soft Drinks
+            {% endif %}
+        </h4>
+        <p>
+            {% if lang == None or lang == 'en' %}
+            Water <a style="color:grey">(still/sparkling)</a>
+            {% elif lang == 'de' %}
+            Spreequell Mineralwasser <a style="color:grey">(still/sprudel)</a>
+            {% endif %}
+        </p>
+        <p>
+            {% if lang == None or lang == 'en' %}
+            Apple Juice / Orange Juice
+            {% elif lang == 'de' %}
+            Apfelsaft / Orangensaft
+            {% endif %}
+        </p>
+        <p>
+            {% if lang == None or lang == 'en' %}
+            Coca-Cola / Cola-Zero / Fanta / Sprite
+            {% elif lang == 'de' %}
+            Coca-Cola / Cola-Zero / Fanta / Sprite
+            {% endif %}
+        </p>
+        <p>
+            {% if lang == None or lang == 'en' %}
+            Café Creme, Espresso, Cappuccino, Kakao, Latte, Macchiato, Milk Coffee
+            {% elif lang == 'de' %}
+            Café Creme, Espresso, Cappuccino, Kakao, Latte, Macchiato, Milchkaffee
+            {% endif %}
+        </p>
+        <p>
+            {% if lang == None or lang == 'en' %}
+            Tea
+            {% elif lang == 'de' %}
+            Tee
+            {% endif %}
+        </p>
+        <br>
+        <h4>
+            {% if lang == None or lang == 'en' %}
+            Beer
+            {% elif lang == 'de' %}
+            Bier
+            {% endif %}
+        </h4>
+        <p>
+            {% if lang == None or lang == 'en' %}
+            Pilsner Urquell <a style="color:grey">(pils, on tap)</a>
+            {% elif lang == 'de' %}
+            Pilsner Urquell vom Fass
+            {% endif %}
+        </p>
+        <p>
+            {% if lang == None or lang == 'en' %}
+            Maisel ́s Weisse Original / Kristall / Alcohol-free <a style="color:grey">(wheat bier)</a>
+            {% elif lang == 'de' %}
+            Maisel ́s Weisse Original / Kristall / Alkoholfrei <a style="color:grey">(Hefeweizen)</a>
+            {% endif %}
+        </p>
+        <p>
+            {% if lang == None or lang == 'en' %}
+            Veltins alcohol-free <a style="color:grey">(pils)</a>
+            {% elif lang == 'de' %}
+            Veltins Alkoholfrei <a style="color:grey">(pils)</a>
+            {% endif %}
+        </p>
+        <br>
+        <h4>
+            {% if lang == None or lang == 'en' %}
+            Wine
+            {% elif lang == 'de' %}
+            Wein
+            {% endif %}
+        </h4>
+        <p>
+            {% if lang == None or lang == 'en' %}
+            Vanel Syrah – Vin de Pays d ́oc – Südfrankreich – Trocken <a style="color:grey">(rot)</a>
+            {% elif lang == 'de' %}
+            Vanel Syrah – Vin de Pays d ́oc – South France – dry <a style="color:grey">(red)</a>
+            {% endif %}
+        </p>
+        <p>
+            {% if lang == None or lang == 'en' %}
+            Villa JL – Pinot Gris – Palatinate – dry <a style="color:grey">(white)</a>
+            {% elif lang == 'de' %}
+            Villa JL – Grauburgunder – Pfalz – Trocken <a style="color:grey">(white)</a>
+            {% endif %}
+        </p>
+        <p>
+            {% if lang == None or lang == 'en' %}
+            San Benedetto – Lugana – Zenato – dry <a style="color:grey">(white)</a>
+            {% elif lang == 'de' %}
+            San Benedetto – Lugana – Zenato – Trocken <a style="color:grey">(white)</a>
+            {% endif %}
+        </p>
+        <p>
+            {% if lang == None or lang == 'en' %}
+            Prosecco Frizzante Terra Serena
+            {% elif lang == 'de' %}
+            Prosecco Frizzante Terra Serena
+            {% endif %}
+        </p>
+        <br>
+        <h4>
+            {% if lang == None or lang == 'en' %}
+            Longdrinks
+            {% elif lang == 'de' %}
+            Longdrinks
+            {% endif %}
+        </h4>
+        <p>
+            {% if lang == None or lang == 'en' %}
+            Aperol Spritz <a style="color:grey">(from 5pm onwards)</a>
+            {% elif lang == 'de' %}
+            Aperol Spritz <a style="color:grey">(ab 17:00)</a>
+            {% endif %}
+        </p>
+        <p>
+            {% if lang == None or lang == 'en' %}
+            Hugo <a style="color:grey">(from 5pm onwards)</a>
+            {% elif lang == 'de' %}
+            Hugo <a style="color:grey">(ab 17:00)</a>
+            {% endif %}
+        </p>
+        <p>
+            {% if lang == None or lang == 'en' %}
+            Cuba Libre <a style="color:grey">(from 6pm onwards)</a>
+            {% elif lang == 'de' %}
+            Cuba Libre <a style="color:grey">(ab 18:00)</a>
+            {% endif %}
+        </p>
+        <p>
+            {% if lang == None or lang == 'en' %}
+            Cuba Libre <a style="color:grey">(from 6pm onwards)</a>
+            {% elif lang == 'de' %}
+            Cuba Libre <a style="color:grey">(ab 18:00)</a>
+            {% endif %}
+        </p>
+        <p>
+            {% if lang == None or lang == 'en' %}
+            Cuba Libre <a style="color:grey">(from 6pm onwards)</a>
+            {% elif lang == 'de' %}
+            Cuba Libre <a style="color:grey">(ab 18:00)</a>
+            {% endif %}
+        </p>
+        <p>
+            {% if lang == None or lang == 'en' %}
+            Whisky Cola <a style="color:grey">(from 6pm onwards)</a>
+            {% elif lang == 'de' %}
+            Whisky Cola <a style="color:grey">(ab 18:00)</a>
+            {% endif %}
+        </p>
+        <p>
+            {% if lang == None or lang == 'en' %}
+            Gin Tonic <a style="color:grey">(from 6pm onwards)</a>
+            {% elif lang == 'de' %}
+            Gin Tonic <a style="color:grey">(ab 18:00)</a>
+            {% endif %}
+        </p>
+        <p>
+            {% if lang == None or lang == 'en' %}
+            Moscow Mule <a style="color:grey">(from 6pm onwards)</a>
+            {% elif lang == 'de' %}
+            Moscow Mule <a style="color:grey">(ab 18:00)</a>
+            {% endif %}
+        </p>
+        <p>
+            {% if lang == None or lang == 'en' %}
+            Gin Tonic <a style="color:grey">(alcohol-free)</a>
+            {% elif lang == 'de' %}
+            Gin Tonic <a style="color:grey">(alkoholfrei)</a>
+            {% endif %}
+        </p>
+    </div>
+</section>
+
+{% include "footer.html" %}

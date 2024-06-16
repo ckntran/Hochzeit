@@ -8,18 +8,18 @@
                 Let's share our memories!
                 {% elif lang == 'de' %}
                 Lasst uns die Erinnerungen teilen!
-                {% elif lang == 'tw' %}
-                和我們一起分享回憶
                 {% endif %}
             </h1>
         </div>
         <p>
             {% if lang == None or lang == 'en' %}
-            You can download and upload any photos and videos here.
+            You can upload any photos and videos via
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScVXYDturm0Wc6RSvhN5xCiI1DQoTUmLAN2i6apIXUBcmn3FA/viewform">
+                this form</a>, and download any content via below Google Drive folder here.
             {% elif lang == 'de' %}
-            Hier können alle Fotos und Videos herunter- und hochgeladen werden.
-            {% elif lang == 'tw' %}
-            這裡可以下載與上傳任何照片和影片.
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScVXYDturm0Wc6RSvhN5xCiI1DQoTUmLAN2i6apIXUBcmn3FA/viewform">
+                Mit diesem Formular</a> können eure Fotos und Videos hochgeladen werden.
+            Alle Medien sind über den unten stehenden Google Drive Ordner downloadbar.
             {% endif %}
         </p>
     </div>
@@ -28,8 +28,8 @@
 <!-- Timeline -->
 <section class="white-section" id="photos">
     <div class="container-fluid">
-        <iframe src="https://drive.google.com/embeddedfolderview?id=170F_fz9UdY6LZWxlRuyDfrZ2N_8-p-ka#list" width="100%"
-                height="100%" frameborder="0"></iframe>
+        <iframe src="https://drive.google.com/embeddedfolderview?id=1ewRt91ec4xuQt0-dwmQ_DhJAjW_WPds2LxvIHb3x3ZtZpFsaTwEYojaMX6TlhAybYs-QSwzQ#grid"
+                frameborder="0" scrolling="yes" seamless="seamless" style="display:block; width:100%; height:100vh;"></iframe>
     </div>
 </section>
 

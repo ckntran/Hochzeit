@@ -295,15 +295,6 @@ active {
   padding-bottom: 3%;
 }
 
-/* Timeline section */
-#timeline h1 {
-  font-family: 'Libre Baskerville', serif;
-}
-
-#timeline .container-fluid {
-  padding: 10% 10%;
-}
-
 /* Photos section */
 
 #photosInfo h1, p {
@@ -320,4 +311,142 @@ active {
 
 #photos .container-fluid {
   padding: 5% 5%;
+}
+
+/* Timeline section */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: grey;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+.timeline-container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+.timeline-container::after {
+  content: '';
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -13px;
+  background-color: grey;
+  border: 4px solid #FF9F55;
+  top: 50px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  left: 50%;
+}
+
+.right::after {
+  left: -12px;
+}
+
+.content {
+  padding: 20px 30px;
+  background-color: white;
+  position: relative;
+  border-radius: 6px;
+}
+
+@media screen and (max-width: 600px) {
+  .timeline::after {
+    left: 28px;
+  }
+
+  .left::after, .right::after {
+    left: 15px;
+  }
+
+  .right {
+    left: 0%;
+  }
+
+  .content {
+    text-align: left;
+    padding: 10px 30px;
+    width: 100%;
+  }
+
+  .timeline-container {
+    padding: 10px 30px;
+  }
+}
+
+/* FAQ */
+.accordion {
+  color: #444;
+  cursor: pointer;
+  padding: 14px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.panel {
+  padding: 0 18px;
+  width: 100%;
+  background-color: white;
+  display: none;
+  font-size: 14px;
+  overflow: hidden;
+  text-align: left;
+}
+
+.accordion:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 14px;
+  color: #373841;
+  color: #2E2F36;
+  float: right;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+#faq p, a {
+  font-family: 'Baskervville', serif;
+  color: #8f8f8f;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+/* Menu */
+
+#menu .container-fluid {
+  padding: 2% 2% 2%;
+  width: 80%;
+  text-align: left;
+}
+
+#menu p {
+    color: #E48F45;
 }
