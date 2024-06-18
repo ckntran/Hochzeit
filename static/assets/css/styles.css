@@ -385,12 +385,13 @@ active {
 
   .content {
     text-align: left;
-    padding: 10px 30px;
-    width: 100%;
+    padding: 10px 5px 10px 30px;
+    border-radius: 0px;
   }
 
   .timeline-container {
-    padding: 10px 30px;
+    padding: 10px 5px 10px 20px;
+    width: 100%;
   }
 }
 
